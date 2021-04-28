@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Semanal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet" />
+    <script src='main.js'></script>
+</head>
+<body onload="validar()">
+    <header>
+        <h1>Relatório Semanal</h1>
+    </header>
+    <section>
+        <div>
+            <input type="radio" name="tra" id="r0" onclick="validar()">
+            <label for="r0">Consultoria da descrição da imagem para as redes sociais do Museu.</label>
+            <input type="radio" name="tra" id="r1"onclick="validar()">
+            <label for="r1">Pesquisa bibliográfica. </label>
+            <input type="text" id="r0t"onmousemove="validar()"><br>
+        </div>
+        <div>
+            <input type="radio" name="trab" id="r2"onclick="validar()">
+            <label for="r2">Consultoria da descrição da imagem para as redes sociais do Museu.</label>
+            <input type="radio" name="trab" id="r3"onclick="validar()">
+            <label for="r3">Pesquisa bibliográfica. </label>
+            <input type="text" id="r1t"onmousemove="validar()"><br> 
+        </div>
+        <div>
+            <input type="radio" name="trab0" id="r4"onclick="validar()">
+            <label for="r4">Consultoria da descrição da imagem para as redes sociais do Museu.</label>
+            <input type="radio" name="trab0" id="r5"onclick="validar()">
+            <label for="r5">Pesquisa bibliográfica.</label>
+            <input type="text" id="r2t"onmousemove="validar()"><br>
+        </div>
+        <div>
+            <input type="radio" name="trab1" id="r6"onclick="validar()">
+            <label for="r6">Consultoria da descrição da imagem para as redes sociais do Museu.</label>
+            <input type="radio" name="trab1" id="r7"onclick="validar()">
+            <label for="r7">Pesquisa bibliográfica. </label>
+            <input type="text" id="r3t"onmousemove="validar()"><br> 
+        </div>
+        <div>
+            <input type="radio" name="trab2" id="r8"onclick="validar()">
+            <label for="r8">Consultoria da descrição da imagem d para as redes sociais do Museu.</label>
+            <input type="radio" name="trab2" id="r9"onclick="validar()">
+            <label for="r9">Pesquisa bibliográfica. </label>
+            <input type="text" id="r4t"onmousemove="validar()"><br>
+        </div><br>
+        <div id="res" contenteditable="true"></div>    
+    </section>
+    <br><br>
+    <footer>&copy;Arthur Bamberg</footer>
+</body>
+</html>
