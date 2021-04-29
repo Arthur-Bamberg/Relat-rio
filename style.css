@@ -16,6 +16,10 @@
     }
 }
 
+header{
+    padding-top: 0.5rem;
+}
+
 body{
     text-align: center;
     font-family: Arial,sans-serif;
@@ -44,8 +48,21 @@ section{
     border-radius: 8px;
 }
 div#res{
+    margin: auto;
+    width: 50rem;
     font-size: 15pt;
     text-align: justify;
+    background-color: #ffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+.container{
+    padding-bottom: 0.5rem;
+}
+input{
+    border-radius: 5px;
+    border-color: transparent;
 }
 footer{
     font-family: Rajdhani;
@@ -56,4 +73,5 @@ footer{
     width: 12rem;
     margin: auto;
     border-radius: 5px;
+    margin-top: -0.5rem;
 }
