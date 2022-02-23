@@ -3,11 +3,11 @@ function validar(){
      let res = document.getElementById('res')
      const hora = new Date().getHours()
      if(hora<12){
-         res.innerHTML = `Bom dia, Rosangela!<br><br>`
+         res.innerHTML = `Bom dia!<br><br>`
      }else if(hora<18){
-         res.innerHTML = `Boa tarde, Rosangela!<br><br>`
+         res.innerHTML = `Boa tarde!<br><br>`
      }else{
-         res.innerHTML = `Boa noite, Rosangela!<br><br>`
+         res.innerHTML = `Boa noite!<br><br>`
      }
      for(c=0;c<5;c++){
              const tra = document.getElementsByName('tra')
@@ -22,13 +22,13 @@ function validar(){
              const text4 = document.getElementById('r4t').value  
              console.log(text1, text2, text3, text4)
              if(c==0){
-                 dia-=7
+                 dia-=8
              }if(dia<1){
                 dia += 30
             }else if(dia>30){
                 dia -= 30
                  }
-             res.innerHTML += `<strong>${dia}</strong>`
+             res.innerHTML += dia/10>=1 ? `<strong>${dia}</strong>` : `<strong>0${dia}</strong>`;
              dia++
              switch(c){
                  case 0 : res.innerHTML += `<strong>-SEG: </strong>`
